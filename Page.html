@@ -1,0 +1,84 @@
+
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Willkommen – Mehr Klarheit für dein Geld</title>
+  <meta name="description" content="Willkommen — Erfahre mehr über Ansätze zur strukturierten Kapitalentwicklung. Informationen zur Verlinkung und ein direkter Hinweis zu Bühner Invest." />
+  <style>
+    :root{--bg:#f7fafc;--card:#ffffff;--accent:#0b5fff;--muted:#6b7280}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:#0f172a}
+    .container{max-width:900px;margin:40px auto;padding:24px}
+    .card{background:var(--card);border-radius:12px;box-shadow:0 6px 18px rgba(15,23,42,0.06);padding:28px}
+    h1{margin:0 0 10px;font-size:28px}
+    p.lead{margin:0 0 20px;color:var(--muted);line-height:1.5}
+    .features{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin:18px 0 24px}
+    .feature{padding:14px;border-radius:10px;background:#fafafa;border:1px solid #eef2ff}
+    .cta{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+    .btn{background:var(--accent);color:#fff;padding:12px 18px;border-radius:10px;text-decoration:none;font-weight:600;box-shadow:0 6px 16px rgba(11,95,255,0.12)}
+    .btn.secondary{background:transparent;color:var(--accent);border:1px solid rgba(11,95,255,0.12)}
+    .small{font-size:13px;color:var(--muted)}
+    footer{margin-top:20px;font-size:13px;color:var(--muted)}
+    .logo{display:flex;gap:12px;align-items:center;margin-bottom:12px}
+    .logo .mark{width:44px;height:44px;border-radius:10px;background:linear-gradient(135deg,#0b5fff,#66a6ff);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700}
+    @media (max-width:520px){h1{font-size:22px}}
+  </style>
+</head>
+<body>
+  <main class="container">
+    <div class="card" role="main" aria-labelledby="title">
+      <div class="logo" aria-hidden="true">
+        <div class="mark">SI</div>
+        <div>
+          <strong>Willkommen</strong><br>
+          <span class="small">Informationen & Hinweise</span>
+        </div>
+      </div>
+
+      <h1 id="title">Willkommen — Mehr Klarheit für dein Geld</h1>
+      <p class="lead">Hier findest du einen kurzen Hinweis und die Möglichkeit, dich weiter zu informieren. Die folgenden Informationen dienen ausschließlich zu Informationszwecken.</p>
+
+      <div class="features" aria-hidden="false">
+        <div class="feature">
+          <strong>Transparenz</strong>
+          <div class="small">Klare Hinweise statt leere Versprechen.</div>
+        </div>
+        <div class="feature">
+          <strong>Einfacher Zugriff</strong>
+          <div class="small">Ein Klick führt dich zur weiterführenden Informationsseite.</div>
+        </div>
+        <div class="feature">
+          <strong>Eigenverantwortung</strong>
+          <div class="small">Entscheidungen triffst du selbst — prüfe immer Quellen und AGB.</div>
+        </div>
+      </div>
+
+      <div class="cta">
+        <!-- Affiliate-Link (öffnet in neuem Tab). rel="nofollow" + noopener schützt und signalisiert Affiliate. -->
+        <a class="btn" href="http://buehner-invest.com#aff=sanvisodji22" target="_blank" rel="noopener noreferrer nofollow">
+          Jetzt Hinweis & Infos ansehen
+        </a>
+
+        <a class="btn secondary" href="#hinweis" onclick="document.getElementById('hinweis').scrollIntoView({behavior:'smooth'})">
+          Rechtliches & Hinweis
+        </a>
+      </div>
+
+      <section id="hinweis" style="margin-top:22px">
+        <h2 style="font-size:16px;margin:14px 0 8px">Wichtiger Hinweis</h2>
+        <p class="small">Die verlinkte Seite stellt Informationen zu Anlageansätzen bereit. Dies ist <strong>keine</strong> Finanzberatung. Vor Investitionsentscheidungen solltest du unabhängige Beratung in Anspruch nehmen und die Risiken prüfen. Ergebnisse aus der Vergangenheit sind kein verlässlicher Indikator für zukünftige Ergebnisse.</p>
+      </section>
+
+      <footer>
+        <p class="small">© <!-- Jahr automatisch setzen --> <span id="year"></span> — Alle Rechte vorbehalten. Kontakt: <a href="mailto:info@deinedomain.de">info@deinedomain.de</a></p>
+      </footer>
+    </div>
+  </main>
+
+  <script>
+    // aktuelles Jahr
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
